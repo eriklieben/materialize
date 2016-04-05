@@ -58,6 +58,7 @@
 			"dist/js/materialize.js",
 			"dist/css/materialize.css",
 			"dist/font/**/*",
+            "dist/fonts/**/*",
 			"extras/noUiSlider/*"
 		],
 		"peerDependencies": {
