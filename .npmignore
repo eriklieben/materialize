@@ -6,3 +6,14 @@ prepros.cfg
 Thumbs.db
 .projectile
 **/*.log
+bin/
+css/
+jade/
+js/
+node_modules/
+res/
+sass/
+templates/
+test/
+tests/
+*.html

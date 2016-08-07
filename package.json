@@ -49,34 +49,42 @@
 	"jspm": {
 		"registry": "jspm",
 		"jspmPackage": true,
-		"main": "dist/js/materialize",
-		"format": "amd",
-		"directories": {
-			"dist": "dist/amd"
-		},
+		"main": "dist/js/materialize.min",
+		"format": "cjs",
+		"ignore": [
+			"bin",
+			"css",
+			"images",
+			"jade",
+			"js",
+			"node_modules",
+			"res",
+			"sass",
+			"templates",
+			"test",
+			"tests",
+			"*.html"
+		],	
 		"files": [
-			"dist/js/materialize.js",
-			"dist/css/materialize.css",
+			"dist/js/materialize.min.js",
+			"dist/css/materialize.min.css",
             "dist/fonts/**/*",
-			"extras/noUiSlider/*"
+			"extras/noUiSlider/nouislider.min.js",
+			"extras/noUiSlider/nouislider.css"
 		],
 		"peerDependencies": {
-			"jquery": "npm:jquery",
+			"jquery": "npm:jquery@2.2.4",
 			"css": "css@^0.1.20"
 		},
 		"dependencies": {
-			"jquery": "npm:jquery",
-			"css": "css@^0.1.20"
-		},
-		"devDependencies": {
-			"jquery": "npm:jquery",
+			"jquery": "npm:jquery@2.2.4",
 			"css": "css@^0.1.20"
 		},
 		"shim": {
-			"dist/js/materialize": {
+			"dist/js/materialize.min": {
 				"deps": [
 					"jquery",
-					"../css/materialize.css!"
+					"../css/materialize.min.css!"
 				],
 				"exports": "$"
 			}
